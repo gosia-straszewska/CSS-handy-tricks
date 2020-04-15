@@ -1,0 +1,35 @@
+.title {
+  background-color: rgb(228, 161, 139);
+  h2 {
+    margin: 0 auto;
+    margin-left: 28px;
+    padding-top: 20px;
+    color:white;
+  }
+}
+.img-container {
+  height: 500px;
+  background-color: rgb(228, 161, 139);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  //To make this effect work, you need to set the width and height of the parent element, and make sure overflow is set to hidden . Then you can apply any kind of transform animations to the inner image.
+
+  .img-wrapper {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border: 10px solid white;
+    margin: 5px;
+
+    .inner-img {
+      transition: 0.3s;
+
+      &:hover {
+        transform: scale(1.2); //zoom
+      }
+    }
+  }
+}
