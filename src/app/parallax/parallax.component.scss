@@ -1,0 +1,36 @@
+.title {
+  h2,
+  h3 {
+    margin: 0 auto;
+    margin-left: 28px;
+    padding-top: 20px;
+    color: rgb(228, 161, 139);
+  }
+}
+
+.wrapper {
+  height: 100vh;
+
+  h1 {
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    background-color: rgb(228, 161, 139);
+  }
+
+  .parallax-img {
+    height: 100%;
+    background-image: url('https://source.unsplash.com/1600x900/?nature,water');
+    background-attachment: fixed; //The must-have property for the simplest version of this effect is background-attachment: fixed , which fixes the background image’s position within the view-port. (The opposite effect is achieved using background-attachment: scroll ).
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  p {
+    margin: 80px;
+    font-size: 1.1rem;
+  }
+}
